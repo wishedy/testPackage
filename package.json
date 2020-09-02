@@ -1,0 +1,26 @@
+{
+  "name": "testwishedypackage",
+  "version": "1.0.0",
+  "description": "测试sh发布",
+  "main": "index.js",
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wishedy/testPackage.git"
+  },
+  "keywords": [
+    "sh"
+  ],
+  "author": "wishedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wishedy/testPackage/issues"
+  },
+  "homepage": "https://github.com/wishedy/testPackage#readme"
+}
