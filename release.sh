@@ -1,9 +1,11 @@
-#!/usr/bin/env sh
+#!/bin/bash
+
+function obtain_git_branch {
+  br=`git branch | grep "*"`
+  echo ${br/* /}
+}
+result=`obtain_git_branch`
+echo Current git branch is $result
 git add ./
-if [ -z "$1" ];
-then
-    git commit -m master
-else
-    git commit -m "$1"
-fi
-git push origin master
+git commit -m $result
+git push
