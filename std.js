@@ -196,11 +196,5 @@ savePackage().then((res)=>{
     console.log(error.message||'package更新失败')
 })
 const openShell = ()=>{
-    let id=1;
-    //process.exit()
-    const exec = require('child_process')
-    exec.execFile('bash release.sh '+id+'',function(err, stdout, stderr){
-        console.log(err, stdout, stderr)
-    } )
 }
 
