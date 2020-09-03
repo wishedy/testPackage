@@ -10,3 +10,4 @@ echo Current git branch is $result
 git add ./
 git commit -m $currentTimeStamp
 git push --set-upstream origin $result
+npm publish
