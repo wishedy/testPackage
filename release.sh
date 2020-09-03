@@ -10,5 +10,5 @@ function obtain_git_branch {
 result=`obtain_git_branch`
 echo Current git branch is $result
 git add ./
-git commit -m '$currentTimeStamp'
+git commit -m "time："$currentTimeStamp
 git push --set-upstream origin $result
