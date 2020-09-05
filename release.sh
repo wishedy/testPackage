@@ -6,7 +6,7 @@ function obtain_git_branch {
   echo ${br/* /}
 }
 result=`obtain_git_branch`
-echo Current git branch is $result
+echo Current git branch is 'feat: ' $result
 git add ./
 git commit -m $currentTimeStamp
 git push --set-upstream origin $result
